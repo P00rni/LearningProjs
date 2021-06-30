@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+
+<suite name="assignment1" parallel="tests" thread-count="5" >
+
+	<test name ="waitrose">
+
+		<parameter name="browser" value="IE"></parameter>
+		<parameter name="site" value="https://www.waitrose.com/" />
+		<parameter name="item" value="tomatoes" />
+
+		<classes>
+			<class name="org.maven1_projLearnings.Assignment1_TestNG"/>
+			
+		</classes>
+
+	</test>
+
+
+	<test name = "met">
+		<parameter name="browser" value="chrome" />
+		<parameter name="site2"
+			value="https://www.metoffice.gov.uk/" />
+		<parameter name="location" value="luton"/>
+		<classes>
+			<class name="org.maven1_projLearnings.metoffce" />
+
+		</classes>
+	</test>
+</suite>
